@@ -6,7 +6,7 @@ import ChatPreview from "./ChatPreview";
 
 const Panel = () => {
     return (
-        <div>
+        <div className={"w-[380px] bg-[#3D3B40] p-1"}>
             <PanelHeader/>
             <SearchBar/>
             <ChatPreview/>
