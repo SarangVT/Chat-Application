@@ -17,7 +17,9 @@ function App() {
             <div className={"w-7 h-0.5 bg-white mb-1"}></div>
           </button>
         </div>
+        <div className={"h-full"}>
         {panelVis ? <Panel/> : ''}
+        </div>
         <ChatWindow/>
       </div>
     </div>
