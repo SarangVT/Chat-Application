@@ -6,10 +6,10 @@ import ConversationArea from "./ConversationArea";
 const 
 ChatWindow  = () => {
     return (
-        <div>
-            <ChatWindowHeader/>
+        <div className={"relative"}>
+            <ChatWindowHeader contactName="Anurag CSE IITI"/>
             <ConversationArea/>
-            <MessageInput/>
+            <div className={"absolute bottom-0"}><MessageInput/></div>
         </div>
     );
 }

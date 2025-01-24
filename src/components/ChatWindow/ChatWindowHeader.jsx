@@ -1,11 +1,11 @@
 import React from "react";
+import Avatar from "../../assets/images/avatar.png";
 
-const ChatWindowHeader = () => {
+const ChatWindowHeader = (props) => {
     return(
-        <div>
-            <div><img src="#" alt="Avatar"/></div>
-            <div><p>Title</p></div>
-            <div>Contacts</div>
+        <div className={"flex flex-row gap-8 p-2 text-white font-semibold pt-2"}>
+            <div><img src={Avatar} alt="Avatar" className={"rounded-full w-[40px] h-[40px]"}/></div>
+            <div className="pt-2">{props.contactName}</div>
         </div>
     );
 }
