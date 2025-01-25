@@ -5,10 +5,12 @@ import ConversationArea from "./ConversationArea";
 
 const ChatWindow  = () => {
     return (
-        <div className={"relative w-full flex"}>
+        <div className={"w-full flex flex-col"}>
             <ChatWindowHeader contactName="Anurag CSE IITI"/>
-            <ConversationArea/>
-            <div className={"absolute bottom-0 w-full"}><MessageInput/></div>
+            <div className={"overflow-y-scroll scrollbar-custom flex-1"}>
+                <ConversationArea/>
+            </div>
+            <div className={"sticky bottom-0 w-full h-[50px]"}><MessageInput/></div>
         </div>
     );
 }
