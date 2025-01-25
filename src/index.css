@@ -4,17 +4,19 @@
 @layer utilities {
     .scrollbar-custom {
       scrollbar-width: thin; /* For Firefox */
-      scrollbar-color: #1e40af #e5e7eb; /* Thumb and track colors */
+      scrollbar-color: #9AA6B2 #e5e7eb; /* Thumb and track colors */
     }
   
     .scrollbar-custom::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
+      width: 6px;
+      height: 6px;
     }
   
     .scrollbar-custom::-webkit-scrollbar-thumb {
       background-color: #1e40af; /* Thumb color */
       border-radius: 4px;
+      min-height: 20px;
+      max-height: 20px;
     }
   
     .scrollbar-custom::-webkit-scrollbar-track {
