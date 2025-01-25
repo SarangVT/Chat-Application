@@ -3,13 +3,12 @@ import ChatWindowHeader from "./ChatWindowHeader";
 import MessageInput from "./MessageInput";
 import ConversationArea from "./ConversationArea";
 
-const 
-ChatWindow  = () => {
+const ChatWindow  = () => {
     return (
-        <div className={"relative"}>
+        <div className={"relative w-full flex"}>
             <ChatWindowHeader contactName="Anurag CSE IITI"/>
             <ConversationArea/>
-            <div className={"absolute bottom-0"}><MessageInput/></div>
+            <div className={"absolute bottom-0 w-full"}><MessageInput/></div>
         </div>
     );
 }

@@ -2,7 +2,9 @@ import React from "react";
 
 const ConversationArea = () => {
     return (
-        <div></div>
+        <div>
+        
+        </div>
     );
 }
 

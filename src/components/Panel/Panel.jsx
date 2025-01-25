@@ -1,15 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import SearchBar from "./searchbar";
 import ChatPreview from "./ChatPreview";
 
 const Panel = () => {
-    const [panel, togglePanel] = useState(1);
 
     return (
-        <div className={`${panel ? 'w-[380px]': 'w-0'} bg-[#3D3B40] p-1 overflow-hidden h-full overflow-y-scroll`}>
+        <div className={"bg-[#3D3B40] p-1 overflow-hidden h-full overflow-y-scroll"}>
             <div className="flex flex-row gap-3">
                 <div className={"flex flex-col"}>
-                    
                     <div className={"bg-[#3D3B40] text-white p-2 font-bold"}>Chats</div>
                 </div>
             </div>
