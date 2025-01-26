@@ -6,7 +6,7 @@ const RecMsg = (props) => {
             <p>{props.name}</p>
             <p>{props.phoneno}</p>
             <p>{props.msg}</p>
-            <div className={"flex justify-end items-end"}><p className={"justify-end"}>{props.time}</p></div>
+            <div className={"flex justify-end items-end"}><p className={"justify-end flex items-center"}>{props.time}</p></div>
         </div>
     );
     

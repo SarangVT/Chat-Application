@@ -15,5 +15,6 @@ const ChatWindow  = () => {
             <div className={"sticky bottom-0 w-full h-[50px]"}><MessageInput/></div>
         </div>
     );
-}
+}                
+
 export default ChatWindow;

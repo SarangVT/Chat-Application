@@ -1,4 +1,5 @@
 import React from "react";
+import {FaCheckDouble } from 'react-icons/fa';
 
 const SentMsg = (props) => {
     return (
@@ -6,7 +7,7 @@ const SentMsg = (props) => {
             <p>{props.name}</p>
             <p>{props.phoneno}</p>
             <p>{props.msg}</p>
-            <div className={"flex justify-end items-end"}><p className={"justify-end"}>{props.time}</p></div>
+            <div className={"flex justify-end items-end"}><p className={"justify-end flex items-center"}>{props.time}&nbsp; {<FaCheckDouble className={"text-blue-900 w-[10px] h-[10px]"}></FaCheckDouble>}</p></div>
         </div>
     );
     
