@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "./searchbar";
 import ChatPreview from "./ChatPreview";
+import {useChats} from "../context/ChatPreviewContext";
 
 const Panel = () => {
-
+    const {recipient, messages, curRecipient, setCurRecipient} = useChats();
     return (
         <div className={"bg-[#3D3B40] p-1 overflow-hidden h-full overflow-y-scroll scrollbar-custom w-[300px]"}>
             <div className="flex flex-row gap-3">
@@ -12,10 +13,9 @@ const Panel = () => {
                 </div>
             </div>
             <SearchBar/>
-            <ChatPreview title="Anurag Prasad" msg="Bhai, kab banayenge?"/>
-            <ChatPreview title="Sarang Thakare" msg="Clone ki nahi repo"/>
-            <ChatPreview title="Anshu Kumar" msg="Gradle version"/>
-            <ChatPreview title="Laddu Kumar" msg="Bhai, ham barbad ho gaye!!!"/>
+            {recipient.map((person, index)=>(
+                <ChatPreview key={index} title={person} msg={messages[person][0]} onClick={()=>setCurRecipient(person)}/>
+            ))}
         </div>
     );
 }
