@@ -1,6 +1,6 @@
 This is a Chat Application UI, intended primarily for frontEnd Design Dash Hackathon of Programming Club, IIT Indore.
-Its Tech Stack is pure React-JS, with some additional dependencies like TailwindCSS and some npm plugins.
-
+Its Tech Stack is pure React-JS, with some additional dependencies like TailwindCSS and some npm plugins.<br/>
+Hosted Link: https://sarangvt.github.io/Chat-Application<br/>
 How to Set and Run this Web App?
 Clone the repo: git clone https://github.com/SarangVT/Chat-Application.git
 Then, do 'npm install'
